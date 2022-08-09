@@ -1,3 +1,7 @@
+"""source information for the d-spacing calibration files to be created
+from add new materials here; if the materials space group information is
+not available add it to the file ./selection_rules.py
+"""
 from . import Material
 
 al = Material(

@@ -1,3 +1,6 @@
+"""main script generating the d-spacing calibration files for all materials
+listed in materials.py
+"""
 from inspect import getmembers
 from os import mkdir
 from os.path import isdir, join

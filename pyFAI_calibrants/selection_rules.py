@@ -1,5 +1,5 @@
-"""the selection rules for the scattering for each space group are taken from
-http://img.chem.ucl.ac.uk/sgp/LARGE/SGP.HTM
+"""the selection rules for the scattering for each space group can be
+found at http://img.chem.ucl.ac.uk/sgp/LARGE/SGP.HTM
 """
 from inspect import getmembers
 import sys

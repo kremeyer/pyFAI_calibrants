@@ -1,0 +1,37 @@
+name: generate calibrant and release files
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout git repo
+        uses: actions/checkout@v3
+
+      - name: install requirements
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
+          
+      - name: generate calibrant files
+        run: python3 -m pyFAI_calibrants
+        
+      - name: create release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: calibrants
+          allowUpdates: true
+          body: "all currently available calibrant files"
+          token: ${{ secrets.YOUR_GITHUB_TOKEN }}
+
+#       - name: upload calibrant files
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: calibrant_files
+#           path: calibrants

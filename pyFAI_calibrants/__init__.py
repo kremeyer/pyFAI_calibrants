@@ -1,6 +1,7 @@
 from pyFAI.calibrant import Cell
 from .selection_rules import get_selection_rules
 
+VERSION = 0.1
 CALIB_DIR = "calibrants"
 
 

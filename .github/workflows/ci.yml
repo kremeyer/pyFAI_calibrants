@@ -6,7 +6,7 @@ on:
     - '*'
 
 jobs:
-  generate_calibrants:
+  release_calibrante:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -18,17 +18,13 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt
-          
+
       - name: generate calibrant files
         run: python3 -m pyFAI_calibrants
-  create_release:
-    needs: generate_calibrants
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
+
       - name: zip calibrants
         run: tar -czf calibrants.tar.gz calibrants
+
       - name: create release
         uses: ncipollo/release-action@v1
         with:

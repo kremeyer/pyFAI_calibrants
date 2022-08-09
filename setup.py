@@ -11,5 +11,5 @@ setup(
     license='',
     author='Laurenz Kremeyer',
     author_email='laurenz.kremeyer@mail.mcgill.ca',
-    description=''
+    description='Collection of pyFAI calibration files'
 )

@@ -28,7 +28,6 @@ jobs:
           artifacts: calibrants
           allowUpdates: true
           body: "all currently available calibrant files"
-          token: ${{ secrets.YOUR_GITHUB_TOKEN }}
 
 #       - name: upload calibrant files
 #         uses: actions/upload-artifact@v3

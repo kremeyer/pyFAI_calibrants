@@ -10,7 +10,6 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout git repo
       - uses: actions/checkout@v3

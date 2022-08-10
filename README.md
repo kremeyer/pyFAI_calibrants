@@ -31,7 +31,7 @@ al = Material(
 
 ## adding new selection rules
 
-To add new selection rules of a space group, a new function in the file `selection_rules.py` needs to be created. The name should follow `__space_group_NNN` with `NNN` being the space group number with leading zeros. For example
+To add new selection rules of a space group, a new function in the file `selection_rules.py` needs to be created. The name must follow `__space_group_NNN` with `NNN` being the space group number with leading zeros. For example
 ```python3
 def __space_group_229(h, k, l):
     if h == 0 and k == 0:

@@ -11,7 +11,7 @@ def get_selection_rules(space_group_number):
     memberdict = dict(memberlist)
 
     if func_name in memberdict.keys():
-        return dict(memberlist)[func_name]
+        return memberdict[func_name]
 
     raise ValueError(
         f"the selection rules for space group {space_group_number} have not been implemented, yet"

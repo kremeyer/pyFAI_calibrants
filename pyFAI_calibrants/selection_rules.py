@@ -44,6 +44,10 @@ def __space_group_136(h, k, l):
     return False
 
 
+def __space_group_164(h, k, l):
+	return True
+
+
 def __space_group_225(h, k, l):
     if h == k and l == 0:
         return h % 2 == 0

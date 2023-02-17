@@ -68,3 +68,16 @@ vo2_rutile = Material(
     lattice="tetragonal",
     lattice_type="P",
 )
+
+tas2_trigonal = Material(
+	name="TaS2_trigonal",
+	space_group_number=164,
+	a=3.38,
+	b=3.38,
+	c=6.17,
+	alpha=90,
+	beta=90,
+	gamma=120,
+	lattice="hexagonal",
+	lattice_type="P"
+)

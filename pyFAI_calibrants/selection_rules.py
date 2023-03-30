@@ -25,7 +25,7 @@ def __space_group_014(h, k, l):
         return k % 2 == 0
     if k == 0:
         return l % 2 == 0
-    return False
+    return True
 
 
 def __space_group_136(h, k, l):
@@ -41,7 +41,11 @@ def __space_group_136(h, k, l):
         return (h + l) % 2 == 0
     if h == 0:
         return (k + l) % 2 == 0
-    return False
+    return True
+
+
+def __space_group_164(h, k, l):
+    return True
 
 
 def __space_group_225(h, k, l):

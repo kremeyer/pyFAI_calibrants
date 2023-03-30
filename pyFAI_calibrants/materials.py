@@ -43,6 +43,19 @@ cr = Material(
     lattice_type="I",
 )
 
+tise2 = Material(
+    name="TiSe2",
+    space_group_number=164,
+    a=3.536,
+    b=3.536,
+    c=6.004,
+    alpha=90,
+    beta=90,
+    gamma=120,
+    lattice="trigonal",
+    lattice_type="P"
+)
+
 vo2_monoclinic = Material(
     name="VO2_monoclinic",
     space_group_number=14,

@@ -49,11 +49,13 @@ def __space_group_164(h, k, l):
 
 
 def __space_group_194(h, k, l):
+    if l != 0:
+        return False
     if h == k:
         return l % 2 == 0
     if h == 0 and k == 0:
         return l % 2 == 0
-	return True
+    return True
 
 
 def __space_group_225(h, k, l):

@@ -43,6 +43,19 @@ cr = Material(
     lattice_type="I",
 )
 
+graphite = Material(
+    name="graphite",
+    space_group_number=194,
+    a=2.464,
+    b=2.464,
+    c=6.711,
+    alpha=90,
+    beta=90,
+    gamma=120,
+    lattice="hexagonal",
+    lattice_type="P",
+)
+
 tise2 = Material(
     name="TiSe2",
     space_group_number=164,
@@ -53,7 +66,7 @@ tise2 = Material(
     beta=90,
     gamma=120,
     lattice="trigonal",
-    lattice_type="P"
+    lattice_type="P",
 )
 
 vo2_monoclinic = Material(
@@ -83,14 +96,14 @@ vo2_rutile = Material(
 )
 
 tas2_trigonal = Material(
-	name="TaS2_trigonal",
-	space_group_number=164,
-	a=3.38,
-	b=3.38,
-	c=6.17,
-	alpha=90,
-	beta=90,
-	gamma=120,
-	lattice="hexagonal",
-	lattice_type="P"
+    name="TaS2_trigonal",
+    space_group_number=164,
+    a=3.38,
+    b=3.38,
+    c=6.17,
+    alpha=90,
+    beta=90,
+    gamma=120,
+    lattice="hexagonal",
+    lattice_type="P",
 )

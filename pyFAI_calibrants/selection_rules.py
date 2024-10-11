@@ -18,6 +18,7 @@ def get_selection_rules(space_group_number):
     )
 
 def __space_group_002(h, k, l):
+    """This is not actually space group 002, but specific to the textured ZnPc films with (h0l)."""
     if k != 0:
         return False
     return True

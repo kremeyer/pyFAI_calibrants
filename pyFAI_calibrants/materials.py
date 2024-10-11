@@ -107,3 +107,16 @@ tas2_trigonal = Material(
     lattice="hexagonal",
     lattice_type="P",
 )
+
+znpc = Material(
+    name="ZnPc",
+    space_group_number=2,
+    a=3.80520,
+    b=12.95900,
+    c=12.04300,
+    alpha=90.6400,
+    beta=95.2600,
+    gamma=90.7200,
+    lattice="monoclinic",
+    lattice_type="P",
+)

@@ -69,12 +69,13 @@ tise2 = Material(
     lattice_type="P",
 )
 
+# Zhang Nanomaterials 11 (2021)
 vo2_monoclinic = Material(
     name="VO2_monoclinic",
     space_group_number=14,
-    a=5.75,
-    b=4.52,
-    c=5.38,
+    a=5.715,
+    b=4.554,
+    c=5.385,
     alpha=90,
     beta=122.6,
     gamma=90,

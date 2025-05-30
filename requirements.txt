@@ -1,1 +1,1 @@
-pyFAI~=0.21
+pyFAI
